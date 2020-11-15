@@ -29,7 +29,7 @@ function checkClick() {
 
     if (chance === 0) {
         clearInterval(interval); // permet de stop l'interval
-        mainContainer.innerHTML = "<video autoplay muted loop><source src='img/Game-Over.mp4' type='video/mp4' /></video>" 
+        mainContainer.innerHTML = "<video autoplay muted loop><source src='img/Game-Over.mp4' type='video/mp4' /></video>" /*" <div class=gameOver> Vous avez perdu !!! </div> "*/
 
 
     }
