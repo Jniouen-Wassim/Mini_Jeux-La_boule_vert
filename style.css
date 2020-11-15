@@ -1,75 +1,74 @@
+section {
+  display: flex;
 
- section {
-   display: flex;
+}
 
- }
+.start-info {
+  display: flex;
+}
 
- .start-info {
-   display: flex;
- }
+.info {
+  margin-top: 50px;
+}
 
- .info {
-   margin-top: 50px;
- }
+a {
+  text-decoration: none;
+}
 
- a {
-   text-decoration: none;
- }
-
- p {
-   margin-left: 30px;
- }
+p {
+  margin-left: 30px;
+}
 
 
- button {
-   margin: 2%;
-   width: 10%;
-   height: 50px;
- }
+button {
+  margin: 2%;
+  width: 10%;
+  height: 50px;
+}
 
- #cercle_n1 {
-   background: rgb(0, 0, 0);
-   border: 2px solid;
-   border-radius: 50%;
-   width: 50px;
-   height: 50px;
-   margin: 20px;
+#cercle_n1 {
+  background: rgb(0, 0, 0);
+  border: 2px solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
 
- }
+}
 
- hr {
-   margin-bottom: 100px;
- }
+hr {
+  margin-bottom: 100px;
+}
 
- #cercle_n2 {
-   background: rgb(0, 0, 0);
-   border: 2px solid;
-   border-radius: 50%;
-   width: 50px;
-   height: 50px;
-   margin: 20px;
+#cercle_n2 {
+  background: rgb(0, 0, 0);
+  border: 2px solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
 
- }
+}
 
- #cercle_n3 {
-   background: rgb(0, 0, 0);
-   border: 2px solid;
-   border-radius: 50%;
-   width: 50px;
-   height: 50px;
-   margin: 20px;
+#cercle_n3 {
+  background: rgb(0, 0, 0);
+  border: 2px solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
 
- }
+}
 
- video {
-   border: 10px solid black;
-   box-shadow: 25px 25px 25px #000000;
-   height: 95vh;
-   margin-left: 9em;
+video {
+  border: 10px solid black;
+  box-shadow: 25px 25px 25px #000000;
+  height: 95vh;
+  margin-left: 9em;
 
- }
+}
 
- /* .gameOver{
+/* .gameOver{
   margin: none;
   height: 100vh;
   display: flex;
