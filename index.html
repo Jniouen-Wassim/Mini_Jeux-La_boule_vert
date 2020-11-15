@@ -1,4 +1,3 @@
-<!-- Page couleur -->
 <!DOCTYPE html>
 <html>
 
@@ -11,26 +10,28 @@
 <body>
 
     <div id="corpsJeu">
+        <div class="start-info">
+            <button id="startBouton" type="submit" onclick="startGame()"> Start Game </button>
+            <p class="info"> But du jeu : Appuyer sur le boutton 'Valider' seulment quand la boule vert apparait. Attention vous n'avez que 3 vies !!! </p>
+        </div>
 
-    <button id="startBouton" type="submit" onclick="startGame()" > Start Game </button>
+         <hr>
+        <section>
 
-    <hr>
-    <section>
+            <div id="cercle_n1"></div>
 
-        <div id="cercle_n1"></div>
+            <div id="cercle_n2"></div>
 
-        <div id="cercle_n2"></div>
+            <div id="cercle_n3"></div>
 
-        <div id="cercle_n3"></div>
+        </section>
 
-    </section>
+        <button id="checkBouton" type="submit" onclick="checkClick()" disabled> Valider </button>
 
-    <button id="checkBouton" type="submit" onclick="checkClick()" disabled  > checkClick </button>
+        <p> Ton score est de : <span id="score"> </span></p>
 
-    <p> Ton score est de : <span id="score"> </span></p>
+        <p> Chance restante : <span id="chance"> </span></p>
 
-    <p> Chance restante : <span id="chance"> </span></p>
-  
     </div>
 
 

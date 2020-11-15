@@ -1,4 +1,3 @@
-
 const mainContainer = document.getElementById("corpsJeu");
 
 let cercleRed = document.getElementById("cercle_n1");
@@ -19,7 +18,6 @@ totalChance.innerHTML = chance;
 function checkClick() {
 
     if (cercleGreen.style.background === "green") {
-
         score++;
         totalScore.innerHTML = score;
 
@@ -30,22 +28,20 @@ function checkClick() {
     }
 
     if (chance === 0) {
-
         clearInterval(interval); // permet de stop l'interval
-        mainContainer.innerHTML =  "<div class=gameOver> Vous avez perdu !!! </div>"
+        mainContainer.innerHTML = "<video autoplay muted loop><source src='img/Game-Over.mp4' type='video/mp4' /></video>" 
+
 
     }
 }
 
 function startGame() {
-
-    sBouton.disabled = true ;
-    cBouton.disabled = false ;
-
+    sBouton.disabled = true;
+    cBouton.disabled = false;
 
     interval = setInterval(function () {
         changeCercleColor();
-    }, 4000);
+    }, 1000);
 
 }
 
@@ -54,19 +50,19 @@ function changeCercleColor() {
 
     setTimeout(function () {
         cercleRed.style.background = "red"
-    }, 1000 /* 1000 = 1se*/ );
+    }, 400 /* 1000 = 1se*/ );
 
     setTimeout(function () {
         cercleOrange.style.background = "orange"
-    }, 2000);
+    }, 600);
 
     setTimeout(function () {
         cercleGreen.style.background = "green"
-    }, 3000);
+    }, 800);
 
     setTimeout(function () {
         cercleRed.style.background = "black"
         cercleOrange.style.background = "black"
         cercleGreen.style.background = "black"
-    }, 4000);
+    }, 1000);
 }
