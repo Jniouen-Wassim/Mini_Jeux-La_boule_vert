@@ -1,0 +1,43 @@
+<!-- Page couleur -->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="corpsJeu">
+
+    <button id="startBouton" type="submit" onclick="startGame()" > Start Game </button>
+
+    <hr>
+    <section>
+
+        <div id="cercle_n1"></div>
+
+        <div id="cercle_n2"></div>
+
+        <div id="cercle_n3"></div>
+
+    </section>
+
+    <button id="checkBouton" type="submit" onclick="checkClick()" disabled  > checkClick </button>
+
+    <p> Ton score est de : <span id="score"> </span></p>
+
+    <p> Chance restante : <span id="chance"> </span></p>
+  
+    </div>
+
+
+
+    <script src="./event.js"></script>
+    <!--Pour lié avec mon fichier event.js -->
+
+</body>
+
+</html>
