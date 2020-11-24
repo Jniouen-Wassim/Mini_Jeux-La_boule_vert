@@ -12,8 +12,8 @@ let score = 0;
 let chance = 3;
 let interval;
 
-totalScore.innerHTML = score;
-totalChance.innerHTML = chance;
+totalScore.innerHTML = score; // on le fait ça pour afficher le message au moin 1x
+totalChance.innerHTML = chance; // idem
 
 function checkClick() {
 
@@ -22,12 +22,12 @@ function checkClick() {
         totalScore.innerHTML = score;
 
     } else {
-        console.log(" chance ", chance);
+        
         chance--;
         totalChance.innerHTML = chance;
     }
 
-    if (chance === 0) {
+    if(chance === 0) {
         clearInterval(interval); // permet de stop l'interval
         mainContainer.innerHTML = "<video autoplay muted loop><source src='img/Game-Over.mp4' type='video/mp4' /></video>" /*" <div class=gameOver> Vous avez perdu !!! </div> "*/
 
@@ -39,14 +39,14 @@ function startGame() {
     sBouton.disabled = true;
     cBouton.disabled = false;
 
-    interval = setInterval(function () {
+    interval = setInterval(function () { // interval qui va englober 'setInterval' pour la clear voir ligne()
         changeCercleColor();
     }, 1000);
 
 }
 
 function changeCercleColor() {
-    console.log("yo");
+    // console.log("yo");
 
     setTimeout(function () {
         cercleRed.style.background = "red"
